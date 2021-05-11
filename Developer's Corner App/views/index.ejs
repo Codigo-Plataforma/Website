@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer's Corner</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/master.css">
+</head>
+
+<body>
+
+    <nav>
+        <img src="logo.png" class="branding">
+        <div id="navbar">
+            <li class="nav-item"><a href="https://codigo-plataforma.github.io/Website/index.html">Home</a></li>
+            <li class="nav-item"><a href="https://codigo-plataforma.github.io/Website/about.html">About us</a></li>
+            <li class="nav-item"><a href="https://codigo-plataforma.github.io/Website/news.html">Announcements</a></li>
+            <li class="nav-item"><a id="current" href="#">Developer's Corner</a></li>
+            <li class="nav-item"><a href="https://codigo-plataforma.github.io/Website/join.html">Join the club</a></li>
+            <li class="nav-item"><a href="https://codigo-plataforma.github.io/Website/contact.html">Contact</a></li>
+        </div>
+
+    </nav>
+    <div class="hamburger" onclick="toggle()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+
+    <div id="outer-box">
+        <div id="top">
+            <h1>Developer's Corner</h1>
+            <h3>Let's create an uplifting and helping environment! Enter down your query or help solving the issues of others. It's an under-development project, soon you will have exciting updates to comment on queries, upload screenshots and much more.</h3>
+        </div>
+        <img src="https://i.pinimg.com/originals/50/a8/57/50a857a7bbe36010c73c07792f1004f4.gif" id="top-img">
+    </div>
+    <form method="post" autocomplete="off">
+        <input type="text" name="title" class="input-box" placeholder="Enter your title" required>
+        <textarea placeholder="Enter the query" name="input" id="query" cols="50" rows="10" required></textarea>
+        <input id="nameField" type="text" name="nameInput" class="input-box" placeholder="Enter your name">
+        <input id="emailField" type="email" name="emailInput" class="input-box" placeholder="Enter your email/phone" required>
+        <div id="button-container">
+            <button id="btn" type="submit">Add</button>
+            <button onclick="anonymous()" id="btn-2" type="submit">Post as Anonymous</button>
+        </div>
+    </form>
+
+    <div id="bottom">
+
+        <h2>Latest queries</h2>
+        <div id="conatiner">
+
+            <% for(let i of fields){ %>
+                <div class="box">
+                    <p class="title">
+                        <%= i.titleBar %>
+                    </p>
+
+                    <p class="event">
+                        <%= i.event %>
+                    </p>
+
+                    <p class="name">
+                        Posted by:
+                        <%= i.stname %>
+                    </p>
+                    <p class="name">
+
+                        Contact:
+                        <%= i.email %>
+                    </p>
+                    <p class="name">
+
+                        Timestamp:
+                        <%= i.createdAt %>
+                    </p>
+
+                    <!--       <form action="/comment" class="comment" method="POST">
+                        <input class="comment-input" type="text" name="commenter" placeholder="Enter your name">
+                        <textarea class="comment-input" name="comment" cols="30" rows="5" placeholder="Enter the solution"></textarea>
+                        <button type="submit" class="comment-btn">Submit</button>
+                    </form> -->
+                </div>
+                <% } %>
+
+
+        </div>
+
+
+    </div>
+    </div>
+    <script src="navbar.js"></script>
+    <script>
+        function anonymous() {
+            document.querySelector('#nameField').value = "Anonymous"
+        }
+    </script>
+</body>
+
+</html>
