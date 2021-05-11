@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codigo Plataforma: Home</title>
+    <link href="stylesheets/master.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <img src="logo.png" class="branding">
+        <div id="navbar">
+            <li class="nav-item"><a href="home.html" id="current">Home</a></li>
+            <li class="nav-item"><a href="about.html">About us</a></li>
+            <li class="nav-item"><a href="news.html">Announcements</a></li>
+            <li class="nav-item"><a href="https://vast-island-94545.herokuapp.com/">Developer's Corner</a></li>
+            <li class="nav-item"><a href="join.html">Join the club</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </div>
+
+    </nav>
+    <div class="hamburger" onclick="toggle()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <div id="background">
+        <div id="bg-text">
+            <p id="heading">CODIGO PLATAFORMA</p>
+            <p id="sub-head">Official Coding Club of Silicon Institute of Technology, Sambalpur</p>
+        </div>
+    </div>
+
+
+    <div id="testimonial">
+        <div data-aos="flip-left" id="first-element" class="element">
+            <p class="review">
+                "In this tech-driven era, programming is the backbone of the magical world where a common person can enjoy the beauty of technology at his/her fingertip. The primary focus of the Codigo Plataforma to enhance the programming skill of each member. Programming
+                is not only a skill, but it is also an art, and every programmer is an artist. This club will focus on how the members can dive into the ocean of the latest technology so that they can portray beautifully on the canvas of technology. Coordinators
+                of this group are sound in coding, and they can support each member 24 × 7 to augment their ability in coding. Members also can reach the faculty coordinator any time to get help in the journey of programming."
+            </p>
+            <img src="images/sohan.jpg" id="review-img">
+            <p class="review-name">
+                Mr. Sohan Pande
+            </p>
+            <p class="review-tagline">(Faculty Coordinator, Codigo Plataforma)</p>
+        </div>
+        <div id="second-element" class="element">
+            <p class="review">
+                “Coding Club opened up a new exciting world of Data Science to me. Without the tutorials it would have never been that friendly or positive entrance into the world of coding that helped me to get this far. I am looking forward to all the opportunities
+                and discoveries that can come from the skills I learnt.”
+            </p>
+            <p class="review-name">
+                Dani Dani
+            </p>
+            <p class="review-tagline">(2nd Year Student)</p>
+        </div>
+        <div id="third-element" class="element">
+            <p class="review">
+                “Coding Club has given the quantitative and technical skills to pursue challenges that I always thought were beyond my scope of abilities and inspired me to continue to learn and share.”
+            </p>
+            <p class="review-name">
+                Shawn Schneidereit
+            </p>
+            <p class="review-tagline">(4th Year Student)</p>
+        </div>
+        <!-- <center>
+            <button id="prev"><</button>
+            <button id="next">></button>
+
+        </center> -->
+    </div>
+
+    <div id="section">
+        <p id="team-head">MEET THE TEAM</p>
+        <div id="team">
+
+            <div class="member" data-aos="fade-down">
+                <div class="team-top">
+                    <img src="images/pic.jpg" alt="" class="pic">
+                </div>
+                <div class="team-container">
+                    <p class="name">Abhishek Kumar Rabidas</p>
+                    <p class="tagline">Founder, Joint Secretary & Student In-charge Web Dev</p>
+
+                </div>
+                <div class="contact">
+                    <a href="https://www.instagram.com/viiiraj07/"><img src="images/instagram.png" class="link-btn"></a>
+                    <a href="https://github.com/viiiraj07"><img src="images/github.png" class="link-btn"></a>
+                    <a href="https://www.linkedin.com/in/abhishek-kumar-rabidas-428760166/"><img src="images/linkedin.png" class="link-btn"></a>
+                </div>
+            </div>
+            <div class="member" data-aos="fade-down">
+                <div class="team-top">
+                    <img src="images/harshit.jpg" alt="" class="pic">
+                </div>
+                <div class="team-container">
+                    <p class="name">Harshit Kumar Gupta</p>
+                    <p class="tagline">Secretary & Overall Student In-charge</p>
+                </div>
+                <div class="contact">
+                    <a href="https://instagram.com/itz_harshit_gupta?igshid=1xbtbq3xzlniu"><img src="images/instagram.png" class="link-btn"></a>
+                    <a href="https://github.com/HarshitGupta865"><img src="images/github.png" class="link-btn"></a>
+                    <a href="https://www.linkedin.com/in/harshit-kumar-gupta-a55294186"><img src="images/linkedin.png" class="link-btn"></a>
+                </div>
+            </div>
+            <div class="member" data-aos="fade-down">
+                <div class="team-top">
+                    <img src="images/sid.jpeg" alt="" class="pic">
+                </div>
+                <div class="team-container">
+                    <p class="name">Siddheswar Ojha</p>
+                    <p class="tagline">Student In-charge App Dev</p>
+                </div>
+                <div class="contact">
+                    <a href="https://www.instagram.com/siiid31/"><img src="images/instagram.png" class="link-btn"></a>
+                    <a href="https://github.com/siddheswarojha"><img src="images/github.png" class="link-btn"></a>
+                    <a href="https://www.linkedin.com/in/siddheswarojha/"><img src="images/linkedin.png" class="link-btn"></a>
+                </div>
+            </div>
+            <div class="member" data-aos="fade-down">
+                <div class="team-top">
+                    <img src="images/malay.jpg" alt="" class="pic">
+                </div>
+                <div class="team-container">
+                    <p class="name">Malay Kumar Purohit</p>
+                    <p class="tagline">Student In-charge Competitive Programming</p>
+                </div>
+                <div class="contact">
+                    <a href="https://www.instagram.com/mind.infinity_thoughts/"><img src="images/instagram.png" class="link-btn"></a>
+                    <a href="#"><img src="images/github.png" class="link-btn"></a>
+                    <a href="https://www.linkedin.com/in/malay-kumar-purohit-83869a196/"><img src="images/linkedin.png" class="link-btn"></a>
+                </div>
+            </div>
+            <div class="member" data-aos="fade-down">
+                <div class="team-top">
+                    <img src="images/sidd.jpeg" alt="" class="pic">
+                </div>
+                <div class="team-container">
+                    <p class="name">Siddharth Priyadarshi</p>
+                    <p class="tagline">Coordinator</p>
+                </div>
+                <div class="contact">
+                    <a href="https://www.linkedin.com/mwlite/in/siddharth-priyadarshi-525461146"><img src="images/instagram.png" class="link-btn"></a>
+                    <a href="https://github.com/siddharthPriyadarshi"><img src="images/github.png" class="link-btn"></a>
+                    <a href="https://www.linkedin.com/mwlite/in/siddharth-priyadarshi-525461146"><img src="images/linkedin.png" class="link-btn"></a>
+                </div>
+            </div>
+            <div class="member" data-aos="fade-down">
+                <div class="team-top">
+                    <img src="images/kanchan.jpg" alt="" class="pic">
+                </div>
+                <div class="team-container">
+                    <p class="name">Kanchan Singh</p>
+                    <p class="tagline">Coordinator</p>
+                </div>
+                <div class="contact">
+                    <a href="https://www.instagram.com/kanchan_809"><img src="images/instagram.png" class="link-btn"></a>
+                    <a href="#"><img src="images/github.png" class="link-btn"></a>
+                    <a href="http://www.linkedin.com/in/kanchan-singh-757997205"><img src="images/linkedin.png" class="link-btn"></a>
+                </div>
+            </div>
+            <div class="member" data-aos="fade-down">
+                <div class="team-top">
+                    <img src="images/prachi.jpg" alt="" class="pic">
+                </div>
+                <div class="team-container">
+                    <p class="name">Prachi Jaiswal</p>
+                    <p class="tagline">Overall Student In-charge</p>
+                </div>
+                <div class="contact">
+                    <a href="https://www.instagram.com/prachijais724"><img src="images/instagram.png" class="link-btn"></a>
+                    <a href="#"><img src="images/github.png" class="link-btn"></a>
+                    <a href="https://www.linkedin.com/in/prachi-jaiswal-b97b421a9"><img src="images/linkedin.png" class="link-btn"></a>
+                </div>
+            </div>
+            <div class="member" data-aos="fade-down">
+                <div class="team-top">
+                    <img src="images/monika.jpg" alt="" class="pic">
+                </div>
+                <div class="team-container">
+                    <p class="name">Monika Shaw</p>
+                    <p class="tagline">Coordinator</p>
+                </div>
+                <div class="contact">
+                    <a href="#"><img src="images/instagram.png" class="link-btn"></a>
+                    <a href="https://github.com/shawmonika616ms"><img src="images/github.png" class="link-btn"></a>
+                    <a href="https://www.linkedin.com/in/monika-shaw-28991a1b9/"><img src="images/linkedin.png" class="link-btn"></a>
+                </div>
+            </div>
+            <div class="member" data-aos="fade-down">
+                <div class="team-top">
+                    <img src="images/shoib.jpg" alt="" class="pic">
+                </div>
+                <div class="team-container">
+                    <p class="name">Shoib Ansari</p>
+                    <p class="tagline">Coordinator & Social Media Manager</p>
+                </div>
+                <div class="contact">
+                    <a href="#"><img src="images/instagram.png" class="link-btn"></a>
+                    <a href="https://github.com/reddishshoib"><img src="images/github.png" class="link-btn"></a>
+                    <a href="https://www.linkedin.com/in/shoib-ansari-766a98185/"><img src="images/linkedin.png" class="link-btn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>All rights reserved to Codigo Plataforma</p>
+        <p>We are happy to discuss possible collaborations, so get in touch at <a href="mailto:siliconcodingclub@gmail.com">siliconcodingclub@gmail.com</a></p>
+        <div id="outer-div-fb">
+            <p id="fb-btn">Follow us on Facebook</p>
+        </div>
+
+        <center><a id="developer" href="developer.html">Meet the developer!</a></center>
+
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="testimonials.js"></script>
+    <script src="navbar.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

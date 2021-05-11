@@ -1,0 +1,170 @@
+:root {
+    --brand_color: #ed4322;
+}
+
+#background {
+    background-color: rgb(0, 0, 0);
+    background: url('https://faciliworks.com/wp-content/uploads/artificial-intelligence-codes-coding-247791.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+#bg-text {
+    padding: 10px;
+    position: relative;
+    top: 36%;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+#heading {
+    color: var(--brand_color);
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+#sub-head {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/* Testimonial CSS */
+
+#testimonial {
+    padding: 50px 40px;
+}
+
+.element {
+    text-align: center;
+}
+
+.element p {
+    margin-bottom: 1rem;
+}
+
+.review {
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.review-name {
+    margin-top: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.review-tagline {
+    margin-top: -0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+}
+
+#review-img {
+    margin-top: 1rem;
+    width: 15%;
+    border-radius: 100px;
+}
+
+#second-element {
+    display: none;
+}
+
+#third-element {
+    display: none;
+}
+
+
+/* TEAM CSS */
+
+#team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#team-head {
+    margin: 20px;
+    text-align: center;
+    font-size: 46px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.pic {
+    width: 256px;
+    border-radius: 200px;
+}
+
+.team-top {
+    text-align: center;
+    margin: 10px;
+}
+
+.team-container {
+    text-align: center;
+}
+
+.name {
+    margin: 10px;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.tagline {
+    margin: 10px;
+    font-size: 1.2rem;
+    font-style: oblique;
+}
+
+.bio {
+    text-align: justify;
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.link-btn {
+    margin: 0px 20px;
+    width: 30px;
+}
+
+.member {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: whitesmoke;
+    padding: 30px 50px;
+    border-radius: 25px;
+    margin: 20px 0px;
+    min-width: 100%;
+}
+
+#team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 800px) {
+    .member {
+        min-width: 40%;
+        background-color: whitesmoke;
+        padding: 30px 50px;
+        margin: 10px 10px;
+        border-radius: 25px;
+    }
+    #review-img {
+        width: 5%;
+        border-radius: 100px;
+    }
+}
