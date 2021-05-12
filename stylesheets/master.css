@@ -53,7 +53,6 @@ nav {
 
 @media screen and (max-width:800px) {
     nav {
-        position: relative;
         justify-content: center;
         flex-direction: column;
         align-items: center;
