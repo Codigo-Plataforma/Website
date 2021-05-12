@@ -155,7 +155,7 @@
     flex-wrap: wrap;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 984px) {
     .member {
         min-width: 40%;
         background-color: whitesmoke;
