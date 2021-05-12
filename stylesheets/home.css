@@ -4,7 +4,7 @@
 
 #background {
     background-color: rgb(0, 0, 0);
-    background: url('../images/homebg.jpg');
+    background: url('https://faciliworks.com/wp-content/uploads/artificial-intelligence-codes-coding-247791.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -66,8 +66,8 @@
 
 #review-img {
     margin-top: 1rem;
-    width: 30%;
-    border-radius: 1000px;
+    width: 15%;
+    border-radius: 100px;
 }
 
 #second-element {
@@ -167,4 +167,36 @@
         width: 5%;
         border-radius: 100px;
     }
+    #app-download-line {
+        font-size: 4rem !important;
+    }
+    #app-download-para {
+        text-align: center !important;
+    }
+}
+
+.mock {
+    width: 100%;
+}
+
+#app-download {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#app-download-line {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#app-download-para {
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    padding: 50px;
+}
+
+#download-btn {
+    width: 50px;
 }
