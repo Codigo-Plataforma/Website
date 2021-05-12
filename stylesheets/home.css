@@ -182,6 +182,10 @@
 #app-download {
     margin-top: 100px;
     margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #app-download-line {
@@ -199,4 +203,17 @@
 
 #download-btn {
     width: 50px;
+}
+
+#sdk-btn {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ed4322;
+    padding: 10px;
+}
+
+#sdk-btn a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    z-index: 1;
 }
